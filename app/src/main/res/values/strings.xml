@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SDA_Assign_2_2018_Abdelkrim_Ouajjit</string>
+    <string name="openCameraID">Implicit Intent : Open Camera</string>
+    <string name="viewPictureID">Implicit Intent: View Picture</string>
+    <string name="callAnActivityID">Explicit Intent: Call an activity</string>
+    <string name="sendMessageID">SEND</string>
+    <string name="showMessageID">your data</string>
+    <string name="enterEmailID">enter email</string>
+    <string name="email">To</string>
+    <string name="subjectID">Subject</string>
+    <string name="buttonToMainID">Send</string>
+    <string name="composeID">Compose</string>
+</resources>
