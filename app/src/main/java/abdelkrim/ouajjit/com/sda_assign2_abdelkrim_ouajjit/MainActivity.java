@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             messageCompose = extras.getString("COMPOSE");
             if (messageTo!=null && messageSubject!=null && messageCompose!=null) {
                 // Capture the layout's TextView and set the string as its text
-                showMessage.setText("To :" + messageTo + "\nSubject:\t" + messageSubject + "\nCompose:\t" + messageCompose);
+                showMessage.setText("To : " + messageTo + "\nSubject: \t" + messageSubject + "\nCompose: \t" + messageCompose);
             }
             }
 
@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
             sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, messageCompose);
         if (messageTo!=null && messageSubject!=null && messageCompose!=null){
             startActivity(sendIntent);
+        }else{
+            Toast.makeText(getApplicationContext(), "No Data present to send!", Toast.LENGTH_SHORT).show();
         }
     }
 
