@@ -15,7 +15,6 @@ public class explicitActivity extends AppCompatActivity {
     private EditText editTextTo;
     private EditText editTextSubject;
     private EditText editTextCompose;
-    private  Boolean checkValidEmail ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +43,12 @@ public class explicitActivity extends AppCompatActivity {
             editTextTo.setError("Please enter a valid email address");
         }else {
             explicitIntent.putExtra("TO", messageTo);
-            checkValidEmail = true;
         }
         String messageSubject = editTextSubject.getText().toString();
         explicitIntent.putExtra("SUBJECT",messageSubject);
         String messageCompose = editTextCompose.getText().toString();
         explicitIntent.putExtra("COMPOSE", messageCompose);
-        if(messageTo.length() != 0 &&  messageSubject.length() != 0 && messageCompose.length()!= 0 ) {
+        if(messageTo.length()!= 0 &&  messageSubject.length()!= 0 && messageCompose.length()!= 0 ) {
             startActivity(explicitIntent);
         }else{
             Toast.makeText(getApplicationContext(), "Please Complete all the fields!", Toast.LENGTH_SHORT).show();

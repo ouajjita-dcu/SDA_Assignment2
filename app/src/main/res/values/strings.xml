@@ -1,4 +1,5 @@
 <resources>
+    <!-- The attribute name presents the key of the string following by the value  -->
     <string name="app_name">SDA_Assign_2_2018_Abdelkrim_Ouajjit</string>
     <string name="openCameraID">Implicit Intent : Open Camera</string>
     <string name="viewPictureID">Implicit Intent: View Picture</string>

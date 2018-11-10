@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        openCamera =(TextView) findViewById(R.id.openCameraID);
-        viewPicture=(TextView) findViewById(R.id.viewPictureID);
-        explicitIntent=(TextView) findViewById(R.id.callAnActivityID);
-        showMessage =(TextView) findViewById(R.id.showMessageID);
+        openCamera =   findViewById(R.id.openCameraID);
+        viewPicture=   findViewById(R.id.viewPictureID);
+        explicitIntent=findViewById(R.id.callAnActivityID);
+        showMessage =  findViewById(R.id.showMessageID);
 
         openCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +123,8 @@ public class MainActivity extends AppCompatActivity {
         if (messageTo!=null && messageSubject!=null && messageCompose!=null){
             startActivity(sendIntent);
         }else{
-            Toast.makeText(getApplicationContext(), "No Data present to send!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "No Data present " +
+                    "to send!", Toast.LENGTH_SHORT).show();
         }
     }
 
